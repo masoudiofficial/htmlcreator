@@ -1,0 +1,757 @@
+html, body {
+    margin: 0px;
+    scrollbar-width: none;
+    -webkit-tap-highlight-color: transparent;
+    -webkit-user-select: none;
+    user-select: none;
+}
+html::-webkit-scrollbar, body::-webkit-scrollbar {
+    display: none;
+}
+::selection {
+    background: lightgray;
+}
+::placeholder {
+    color: #bbbbbb;
+    font-family: serif;
+    font-size: 11px;
+}
+.xltr {
+    direction: ltr;
+}
+.xrtl {
+    direction: rtl;
+}
+.xtoolbars {
+    margin: 0px 5px 17px 5px;
+    border: 1px solid #bbbbbb;
+    box-shadow: 0px 0px 6px 0px rgba(0,0,0,0.3);
+    padding: 0px 5px;
+    border-radius: 1px;
+    background: #ffffff;
+    position: relative;
+    z-index: 1;
+}
+.xmenu {
+    float: left;
+    color: #009999;
+    font-family: serif;
+    font-size: 13px;
+    font-weight: bold;
+    cursor: pointer;
+    background: #ffffff;
+    animation: xmenu 2s ease infinite;
+}
+@keyframes xmenu {
+    50% {
+        text-shadow: 0px 0px 2px #BBBBBB;
+    }
+}
+.xtab1, .xtab2, .xtab3, .xtab4, .xtab5, .xtab6, .xtab7 {
+    overflow: hidden;
+}
+.xtab1 button, .xtab2 button, .xtab3 button, .xtab4 button, .xtab5 button, .xtab6 button, .xtab7 button {
+    margin-bottom: 5px;
+    margin-right: 2px;
+    border: none;
+    border-radius: 1px;
+    outline: none;
+    font-family: serif;
+    font-size: 13px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+    background: #f5f5f5;
+    color: #009999;
+    padding: 3px 7px;
+    box-shadow: 0px 1px 3px 0px #CCCCCC;
+}
+.xtab1 button:hover, .xtab2 button:hover, .xtab3 button:hover, .xtab4 button:hover, .xtab5 button:hover, .xtab6 button:hover, .xtab7 button:hover {
+    background: orange;
+    box-shadow: 0px 0px 0px 0px #FFFFFF;
+    color: #ffffff;
+}
+.xtab1 button.active, .xtab2 button.active, .xtab3 button.active, .xtab4 button.active, .xtab5 button.active, .xtab6 button.active, .xtab7 button.active {
+    background: orange;
+    box-shadow: 0px 0px 0px 0px #FFFFFF;
+    color: #ffffff;
+}
+.xtabcontent1, .xtabcontent2, .xtabcontent3, .xtabcontent4, .xtabcontent5, .xtabcontent6, .xtabcontent7 {
+    border-top: 1px solid #bbbbbb;
+    padding-top: 5px;
+}
+.xboxxobdimensions {
+    margin-top: 4px;
+    float: right;
+    color: #009999;
+    font-family: serif;
+    font-size: 11px;
+    font-weight: bold;
+}
+.xtools {
+    overflow: auto;
+    border: 1px solid #bbbbbb;
+    box-sizing: border-box;
+    padding: 5px;
+    width: 100%;
+    border-radius: 3px;
+}
+.xhorizontalscroll {
+    overflow: auto;
+    white-space: nowrap;
+    scrollbar-width: none;
+    cursor: default;
+    user-select: none;
+}
+.xhorizontalscroll::-webkit-scrollbar {
+    display: none;
+}
+#xhelpbutton2 {
+    vertical-align: middle;
+}
+.xhelp {
+    border: 1px solid #bbbbbb;
+    box-shadow: 0px 1px 3px 0px #CCCCCC;
+    color: #009999;
+    background: #ffffff;
+    cursor: pointer;
+    font-weight: bold;
+    font-family: serif;
+    text-align: center;
+    border-radius: 50%;
+    padding: 4px 5px 0px 5px;
+    position: relative;
+    font-size: 0.75em;
+    line-height: 1;
+    vertical-align: middle;
+}
+.xhelp:active {
+    box-shadow: 0px 0px 0px 0px #FFFFFF;
+}
+.xhelpdisplay {
+    overflow: auto;
+    max-height: 317px;
+    font-size: 12px;
+    color: #009999;
+    font-family: serif;
+}
+::-webkit-scrollbar {
+    width: 5px;
+    height: 5px;
+}
+::-webkit-scrollbar-track {
+    background: #EEEEEE;
+    border-radius: 3px;
+}
+::-webkit-scrollbar-thumb {
+    background: #CCCCCC;
+    border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: #009999;
+}
+::-webkit-scrollbar-thumb:active {
+    background: #009999;
+}
+::-webkit-scrollbar-button {
+    background: #CCCCCC;
+    border-radius: 3px;
+}
+::-webkit-scrollbar-button:hover {
+    background: #009999;
+}
+::-webkit-scrollbar-button:active {
+    background: #009999;
+}
+.xbuttons {
+    background: #ffffff;
+    font-family: serif;
+    font-size: 13px;
+    font-weight: bold;
+    color: #009999;
+    border: 1px solid #bbbbbb;
+    border-radius: 3px;
+    padding: 3px 7px;
+    box-shadow: 0px 1px 3px 0px #CCCCCC;
+    cursor: pointer;
+}
+.xbuttons:active {
+    box-shadow: 0px 0px 0px 0px #FFFFFF;
+}
+#xcopycode {
+    vertical-align: middle;
+}
+#xconvert {
+    vertical-align: middle;
+}
+.xhelpproperty {
+    border: 1px solid #bbbbbb;
+    box-shadow: 0px 1px 3px 0px #CCCCCC;
+    color: #009999;
+    background: #ffffff;
+    cursor: pointer;
+    font-weight: bold;
+    font-family: serif;
+    text-align: center;
+    border-radius: 50%;
+    padding: 4px 5px 0px 5px;
+    position: relative;
+    font-size: 0.75em;
+    line-height: 1;
+    vertical-align: middle;
+}
+.xhelpproperty:active {
+    box-shadow: 0px 0px 0px 0px #FFFFFF;
+}
+.xtexts {
+    font-family: serif;
+    font-size: 13px;
+    font-weight: bold;
+    color: #009999;
+}
+.xinputs {
+    outline: none;
+    width: 48px;
+    background: #ffffff;
+    font-family: serif;
+    font-size: 13px;
+    font-weight: bold;
+    color: #009999;
+    border: 1px solid #bbbbbb;
+    border-radius: 3px;
+    padding: 3px 7px;
+    box-shadow: 0px 1px 3px 0px #CCCCCC;
+}
+.xinputs:active {
+    box-shadow: 0px 0px 0px 0px #FFFFFF;
+}
+input[type='color'] {
+    transform: scale(3);
+    cursor: pointer;
+}
+.xinputtypecolor {
+    overflow: hidden;
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    transition: 0.3s;
+    box-shadow: 0px 2px 3px 0px gray;
+}
+.xinputtypecolor:active {
+    box-shadow: 0px 0px 0px 0px #FFFFFF;
+    opacity: 0.9;
+}
+.xboxnextandprevious, .xxobnextandprevious {
+    border: 1px solid #bbbbbb;
+    box-shadow: 0px 1px 3px 0px #CCCCCC;
+    color: #009999;
+    background: #ffffff;
+    cursor: pointer;
+    font-weight: bold;
+    font-family: serif;
+    text-align: center;
+    border-radius: 50%;
+    font-size: 15px;
+    padding: 0px 6px;
+}
+.xboxnextandprevious:active, .xxobnextandprevious:active {
+    box-shadow: 0px 0px 0px 0px #FFFFFF;
+}
+.xboxtransformationclasses, .xxobtransformationclasses {
+    overflow: auto;
+    height: 58px;
+    scrollbar-width: none;
+}
+.xboxtransformationclasses::-webkit-scrollbar, .xxobtransformationclasses::-webkit-scrollbar  {
+    display: none;
+}
+.xboxtransformationclasses .xboxtransformationclass, .xxobtransformationclasses .xxobtransformationclass {
+    display: none;
+}
+.xboxtooltipscrollbar, .xxobtooltipscrollbar {
+    vertical-align: middle;
+    width: 144px;
+    height: 18px;
+    font-family: serif;
+    resize: none;
+    outline: none;
+    color: #009999;
+    background: #ffffff;
+    border: 1px solid #bbbbbb;
+    border-radius: 3px;
+    padding: 1px 7px 2px 7px;
+    box-shadow: 0px 1px 3px 0px #CCCCCC;
+    scrollbar-width: none;
+}
+.xboxtooltipscrollbar::-webkit-scrollbar, .xxobtooltipscrollbar::-webkit-scrollbar {
+    display: none;
+}
+.xboxtooltipscrollbar:active, .xxobtooltipscrollbar:active {
+    box-shadow: 0px 0px 0px 0px #FFFFFF;
+}
+.xnextandprevious {
+    border: 1px solid #bbbbbb;
+    box-shadow: 0px 1px 3px 0px #CCCCCC;
+    color: #009999;
+    background: #ffffff;
+    cursor: pointer;
+    font-weight: bold;
+    font-family: serif;
+    text-align: center;
+    border-radius: 50%;
+    font-size: 15px;
+    padding: 0px 6px;
+}
+.xnextandprevious:active {
+    box-shadow: 0px 0px 0px 0px #FFFFFF;
+}
+.xtransformationclasses {
+    overflow: auto;
+    height: 58px;
+    scrollbar-width: none;
+}
+.xtransformationclasses::-webkit-scrollbar {
+    display: none;
+}
+.xtransformationclasses .xtransformationclass {
+    display: none;
+}
+.xtooltipscrollbar {
+    vertical-align: middle;
+    width: 144px;
+    height: 18px;
+    font-family: serif;
+    resize: none;
+    outline: none;
+    color: #009999;
+    background: #ffffff;
+    border: 1px solid #bbbbbb;
+    border-radius: 3px;
+    padding: 1px 7px 2px 7px;
+    box-shadow: 0px 1px 3px 0px #CCCCCC;
+    scrollbar-width: none;
+}
+.xtooltipscrollbar::-webkit-scrollbar {
+    display: none;
+}
+.xtooltipscrollbar:active {
+    box-shadow: 0px 0px 0px 0px #FFFFFF;
+}
+.xbox {
+    display: inline-block;
+    box-sizing: border-box;
+    background: #ededed;
+    outline : none;
+    scrollbar-width: none;
+}
+.xbox::-webkit-scrollbar {
+    display: none;
+}
+[contenteditable][placeholder]:empty:before {
+    content: attr(placeholder);
+    color: #009999;
+}
+.xtexts2 {
+    font-family: serif;
+    font-size: 13px;
+    font-weight: bold;
+    color: #BBBBBB;
+}
+.xalertmessage {
+    position: fixed;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -30%);
+    z-index: 11;
+    outline: none;
+    font-size: 14px;
+    font-weight: bold;
+    color: #FFFFFF;
+    border-radius: 18px;
+    padding: 9px 18px;
+    background: orange;
+    box-shadow: 2px 2px 6px #AAAAAA;
+}
+.xmarkunmarkreplace {
+    display: inline-block;
+    cursor: pointer;
+}
+.xmarkunmarkreplace:active {
+    transform: scale(0.96);
+}
+mark {
+    background: #CCCCCC;
+    color: #009999;
+}
+.xreverse {
+    border: none;
+    outline: none;
+    width: 44px;
+    background: #ffffff;
+    font-family: serif;
+    font-size: 13px;
+    font-weight: bold;
+    color: #CCCCCC;
+}
+.xreverse::placeholder {
+    color: #CCCCCC;
+    font-family: serif;
+    font-size: 13px;
+}
+.xmarkunmarknew {
+    border: none;
+    outline: none;
+    width: 25px;
+    background: #ffffff;
+    font-family: serif;
+    font-size: 13px;
+    font-weight: bold;
+    color: #CCCCCC;
+}
+.xmarkunmarknew::placeholder {
+    color: #CCCCCC;
+    font-family: serif;
+    font-size: 13px;
+}
+.xmarkfind {
+    border: none;
+    outline: none;
+    width: 25px;
+    background: #ffffff;
+    font-family: serif;
+    font-size: 13px;
+    font-weight: bold;
+    color: #CCCCCC;
+}
+.xmarkfind::placeholder {
+    color: #CCCCCC;
+    font-family: serif;
+    font-size: 13px;
+}
+.xhidden {
+    display: none;
+}
+.xremovefile:hover {
+    color: #BBBBBB;
+}
+.xremovefile:active {
+    color: #BBBBBB;
+}
+.xmodepublish {
+    vertical-align: middle;
+    position: relative;
+    display: inline-block;
+    width: 30px;
+    height: 15px;
+}
+.xmodepublish input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+.xmodepublishslider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #009999;
+    -webkit-transition: .3s;
+    transition: .3s;
+}
+.xmodepublishslider:before {
+    position: absolute;
+    content: '';
+    height: 11px;
+    width: 11px;
+    left: 2px;
+    bottom: 2px;
+    background: #FFFFFF;
+    -webkit-transition: .3s;
+    transition: .3s;
+}
+.xmodepublishslider.xmodepublishround {
+    border-radius: 16px;
+}
+.xmodepublishslider.xmodepublishround:before {
+    border-radius: 50%;
+}
+input:checked + .xmodepublishslider:before {
+    -webkit-transform: translateX(15px);
+    -ms-transform: translateX(15px);
+    transform: translateX(15px);
+}
+.xboxorpagepreviewsymbol {
+    display: inline-block;
+    color: #CCCCCC;
+    font-family: serif;
+    font-size: 12px;
+    font-weight: bold;
+    cursor: pointer;
+    vertical-align: middle;
+}
+.xxobgotopage {
+    border: none;
+    outline: none;
+    width: 30px;
+    background: #ffffff;
+    font-family: serif;
+    font-size: 13px;
+    font-weight: bold;
+    color: #CCCCCC;
+}
+.xxobgotopage::placeholder {
+    color: #CCCCCC;
+    font-family: serif;
+    font-size: 13px;
+}
+.xcheckboxcontent input {
+    display: none;
+}
+.xcheckboxcontent span {
+    background: #ffffff;
+    font-family: serif;
+    font-size: 13px;
+    font-weight: bold;
+    color: #BBBBBB;
+    border: 1px solid #BBBBBB;
+    border-radius: 3px;
+    padding: 3px 7px;
+    box-shadow: 0px 1px 3px 0px #CCCCCC;
+    cursor: pointer;
+}
+.xcheckboxcontent span:active {
+    box-shadow: 0px 0px 0px 0px #FFFFFF;
+}
+.xcheckboxcontent input[name="xcheckboxcontent"]:hover + span {
+    color: #009999;
+}
+.xcheckboxcontent input[name="xcheckboxcontent"]:checked + span {
+    color: #009999;
+}
+.xstyledn {
+    display: none;
+}
+#xsticky {
+    position: -webkit-sticky;
+    position: sticky;
+    padding-top: 5px;
+    top: 0px;
+    background: #FFFFFF;
+    z-index: 9;
+    border: 1px solid rgba(255, 255, 255, 0);
+}
+#xshowxtoolbars {
+    display: none;
+    margin-left: 10px;
+    cursor: pointer;
+    color: #009999;
+    font-family: serif;
+    font-size: 11px;
+    font-weight: bold;
+}
+.xstyle1 {
+    font-family: serif;
+}
+.xstyleml3px {
+    margin-left: 3px;
+}
+.xhidextoolbars {
+    cursor: pointer;
+}
+.xstyle2 {
+    margin-bottom: 10px;
+}
+.xstyle3 {
+    display: none;
+    padding: 5px;
+}
+.xstyle4 {
+    display: none;
+    padding: 5px;
+}
+.xstyle5 {
+    display: block;
+    margin-bottom: 5px;
+}
+#xboxmodepublish, #xpagemodepublish {
+    font-family: serif;
+    font-size: 13px;
+    font-weight: bold;
+    color: #009999;
+}
+.xstyle6 {
+    display: block;
+    padding-bottom: 5px;
+    margin-bottom: -5px;
+}
+.xstylevam {
+    vertical-align: middle;
+}
+.xstyle7 {
+    margin-top: 10px;
+}
+#xconvertpreview {
+    display: block;
+}
+.xstyle8, .xstyle9, #xfontfamilytype, .xstyle14 {
+    margin-right: 16px;
+}
+.xstyle10 {
+    padding: 3px 0px 7px 0px;
+    margin-bottom: 2px;
+}
+.xstylem03tac {
+    margin: 0px 3px;
+    text-align: center;
+}
+.xstylepbmb5px {
+    padding-bottom: 5px;
+    margin-bottom: -5px;
+}
+.xstylemr3px {
+    margin-right: 3px;
+}
+.xstyleml16px {
+    margin-left: 16px;
+}
+#xboxswap2boxid {
+    margin-right: 3px;
+    text-align: center;
+}
+.xstylednml3 {
+    display: none;
+    margin-left: 3px;
+}
+.xstylepb5dn {
+    padding-bottom: 5px;
+    display: none;
+}
+.xstylepb5px {
+    padding-bottom: 5px;
+}
+.xstylevamdn {
+    vertical-align: middle;
+    display: none;
+}
+.xstylednmt {
+    display: none;
+    margin-top: 5px;
+}
+#xboxpositiontopbottom, #xxobpositiontopbottom {
+    margin-left: 32px;
+}
+.xstylevamml3dn {
+    vertical-align: middle;
+    margin-left: 3px;
+    display: none;
+}
+.xstylemldn {
+    margin-left: 3px;
+    display: none;
+}
+.xstyledibvamml3 {
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 3px;
+}
+.xstylevamml {
+    vertical-align: middle;
+    margin-left: 3px;
+}
+.xstyle11 {
+    margin-bottom: -16px;
+    text-align: right;
+}
+.xstyle12, .xstyle13, .xstyle15 {
+    margin-bottom: -2px;
+}
+.xstylepb5mb5mt5 {
+    padding-bottom: 5px;
+    margin-bottom: -5px;
+    margin-top: 5px;
+}
+#xboxhyperlink, #xhyperlink {
+    width: 144px;
+}
+.xstylemw80di {
+    min-width: 80%;
+    display: inline-block;
+}
+.xstylepb5pr4 {
+    padding-bottom: 5px;
+    padding-right: 4px;
+}
+.xstylemw20ditarmr4 {
+    min-width: 20%;
+    display: inline-block;
+    text-align: right;
+    margin-right: -4px;
+}
+.xstyle16 {
+    margin-bottom: -16px;
+    text-align: right;
+}
+.xstyle17 {
+    clear: both;
+    margin-bottom: 5px;
+}
+.xstyle18, .xstyle19 {
+    float: right;
+}
+#ximportfontfamilyfrom {
+    width: 50px;
+}
+#xnamefontfamilyfrom, #xnamefontfamilyto {
+    width: 60px;
+}
+#ximportfontfamilyto {
+    width: 50px;
+    margin-left: 3px;
+}
+.xstyle20 {
+    clear: both;
+    margin-bottom: 5px;
+}
+#ximageurl, #xaudiourl, #xvideourl, #xvideoposter {
+    width: 119px;
+}
+.xstylecb {
+    color: #BBBBBB;
+}
+#xxobnumberpage {
+    width: 62px;
+    margin-left: 3px;
+    text-align: center;
+}
+#xxobaferpage, #xxobdeletepage {
+    width: 62px;
+    margin: 0px 3px;
+    text-align: center;
+}
+.xstylemb5 {
+    margin-bottom: 5px;
+}
+.xstyle21 {
+    margin-bottom: -16px;
+    text-align: right;
+}
+#xxobhyperlink {
+    width: 144px;
+}
+.xstyle22 {
+    margin-top: 5px;
+}
+.xstyle23 {
+    float: right;
+    display: inline-block;
+    vertical-align: middle;
+}
+#xdivision {
+    margin: 15px 0px;
+    border-bottom: 1px dashed #BBBBBB;
+}
+#xpagepreview {
+    overflow: auto;
+}
