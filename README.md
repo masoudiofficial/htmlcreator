@@ -4,7 +4,4 @@ Create, edit, and read HTML Books ( HTMLBook / WebBook ) online or offline with 
   
 try it yourself :  
 https://creator-html.web.app  
-https://www.youtube.com/watch?v=rHKDlXNNx68  
-
-credits :  
-Music by MiroMaxMusic from Pixabay . com
+https://www.youtube.com/watch?v=rHKDlXNNx68
