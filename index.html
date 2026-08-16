@@ -6,9 +6,10 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="robots" content="index, follow">
-        <meta name="description" content="Create, edit, and read HTML Books ( Web Books ) online or offline with static or animated text, image, video, and audio using HTMLCreator.">
+        <meta name="description" content="Create, edit, and read HTML Books ( Web Books ) online or offline with static or animated text, image, video, and audio using HTML Creator.">
         <link rel="stylesheet" type="text/css" href="./style.css">
         <link rel="icon" href="./favicon.ico">
+        <link rel="canonical" href="https://html-creator.com/">
     </head>
     <body>
 
@@ -35,10 +36,14 @@
                     <input type="hidden" id="xopentab1">
 
                     <div id="xbuttontab1" class="xtabcontent1">
-                        <span class="xstyle2">
+                        <div class="xstyle2 xhorizontalscroll">
+                            <a href="https://www.youtube.com/watch?v=x_9heog0aIo" target="_blank"><input type="button" class="xbuttons" value="How it works"></a>
+                            <a href="./book.html" target="_blank"><input type="button" class="xbuttons" value="Book sample"></a>
+                            <a href="./html-creator.com.zip" download><input type="button" class="xbuttons" value="Download app"></a>
+                            <a href="https://github.com/masoudiofficial" target="_blank"><input type="button" class="xbuttons" value="Developer"></a>
                             <input type="button" class="xbuttons" id="xhelpbutton2" value="License">
                             <input type="button" class="xhelp" id="xhelpbutton" value="?">
-                        </span>
+                        </div>
                         <span class="xtexts2 xverticalscroll xhelpdisplay xstyle3" id="xhelpbutton2display">
                             <span class="xtexts">LICENSE AGREEMENT ( the parties hereby agree as follows ):</span><br/>
                             - The Software (the App) is licensed for the sole use of the Licensee and shall be used only for the purposes set forth in this Agreement.<br/>
@@ -97,7 +102,7 @@
                             Defines the degree of color rotation in the HSL color space filter.<br/><br/>
                             - Note:<br/>
                             Holding down the Set or Clear button for more than one second activates automatic mode (Set: left-to-right selection, Clear: right-to-left selection).<br/><br/>
-                            <span class="xtexts">HTML Creator: Simple & powerful</span>
+                            <span class="xtexts"><a href="https://html-creator.com" target="_blank">html-creator.com</a> : simple & powerful</span>
                         </span>
                     </div>
 
@@ -112,6 +117,8 @@
                         </div>
                         <div class="xstyle6">
                             <span class="xstyledn" id="xpagemode">
+                                <input type="text" class="xinputs" id="xdescription" maxlength="160" placeholder="Description" spellcheck="false" autocomplete="off"><br/>
+                                <input type="text" class="xinputs" id="xtitle" maxlength="64" placeholder="Title" spellcheck="false" autocomplete="off">
                                 <input type="button" class="xbuttons xstylevam" id="xsavebook" value="Save book">
                                 <button type="button" class="xbuttons xstylevam" id="xselectbook">Open book</button>
                                 <input type="file" class="xbuttons xstyledn" id="xopenbook" accept="text/html" value="Open book">
